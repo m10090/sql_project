@@ -1,0 +1,11 @@
+CustomerID,First name,Last name,Email,Address,City,Zip code,Phone Number
+1,John,Doe,johndoe@example.com,123 Main St,New York,10001,555-123-4567
+2,Jane,Smith,janesmith@example.com,456 Elm St,Los Angeles,90001,555-987-6543
+3,Michael,Johnson,michaeljohnson@example.com,789 Oak St,Chicago,60601,555-234-5678
+4,Sarah,Williams,sarahwilliams@example.com,321 Pine St,Houston,77002,555-876-5432
+5,David,Brown,davidbrown@example.com,987 Maple Ave,Miami,33130,555-345-6789
+6,Emily,Jones,emilyjones@example.com,654 Cedar St,Seattle,98101,555-765-4321
+7,Andrew,Davis,andrewdavis@example.com,876 Spruce St,Boston,02108,555-234-5678
+8,Sophia,Miller,sophiamiller@example.com,234 Birch St,San Francisco,94102,555-876-5432
+9,Oliver,Taylor,olivertaylor@example.com,567 Walnut St,Dallas,75201,555-345-6789
+10,Emma,Anderson,emmaanderson@example.com,890 Oak St,Atlanta,30303,555-987-6543
