@@ -8,3 +8,6 @@ the password is: reallyStrongPwd123
 the username is: SA
 the port is: 1433
 the server name is: localhost
+sudo mysql_secure_installation alter user 'root'@'localhost' identified with mysql_native_password by 'reallyStrongPwd123';
+```
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 12345678;
