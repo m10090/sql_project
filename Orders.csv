@@ -1,4 +1,4 @@
-OrderID,CustomerID,ProductID,OrderDate,Quantity,TotalAmount
+OrderID,CustomerID,ProductID,OrderDate,Quantity,Total
 1,1,5,2023-05-01,2,98
 2,2,3,2023-05-02,1,799
 3,3,7,2023-05-03,3,387

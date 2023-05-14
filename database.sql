@@ -1,28 +1,30 @@
-create database OnlineStore;
-create table OnlineStore.Customer(
-    CustomerID int not null primary key,
-    FirstName varchar(255) not null,
-    LastName varchar(255) not null,
-    Email varchar(255) not null,
-    Address varchar(255) not null,
-    City varchar(255) not null,
-    ZipCode varchar(255) not null,
-    PhoneNumber varchar(255) not null
+CREATE DATABASE OnlineStore;
+CREATE TABLE OnlineStore.Customer (
+    CustomerID INT NOT NULL PRIMARY KEY,
+    FirstName VARCHAR(255) NOT NULL,
+    LastName VARCHAR(255) NOT NULL,
+    Email VARCHAR(255) NOT NULL,
+    Address VARCHAR(255) NOT NULL,
+    City VARCHAR(255) NOT NULL,
+    ZipCode VARCHAR(255) NOT NULL,
+    PhoneNumber VARCHAR(255) NOT NULL
 );
-create table OnlineStore.Product(
-    ProductID int not null primary key,
-    ProductName varchar(255) not null,
-    Category varchar(255) not null,
-    ProductPrice decimal(10,2) not null,
-    ProductQuantity int not null
+CREATE TABLE OnlineStore.Product(
+    ProductID INT  PRIMARY KEY,
+    ProductName VARCHAR(255) NOT NULL,
+    Category VARCHAR(255) NOT NULL,
+    Price DECIMAL(10, 2)   NOT NULL,
+    Quantity INT NOT NULL
 );
-create table OnlineStore.Orders(
-    OrderID int not null primary key,
-    CustomerID int,
-    ProductID int,
-    foreign key (CustomerID) references OnlineStore.Customer(CustomerID),
-    foreign key (ProductID) references OnlineStore.Product(ProductID),
-    OrderDate date not null,
-    OrderQuantity int not null,
-    OrderTotal decimal(10,2) not null
+
+
+CREATE TABLE OnlineStore.Orders (
+    OrderID INT NOT NULL PRIMARY KEY,
+    CustomerID INT,
+    ProductID INT,
+    OrderDate DATE NOT NULL,
+    Quantity INT NOT NULL,
+    Total DECIMAL(10, 2) NOT NULL,
+    FOREIGN KEY (CustomerID) REFERENCES OnlineStore.Customer(CustomerID),
+    FOREIGN KEY (ProductID) REFERENCES OnlineStore.Product(ProductID)
 );

@@ -1,4 +1,4 @@
-CustomerID,First name,Last name,Email,Address,City,Zip code,Phone Number
+CustomerID,FirstName,LastName,Email,Address,City,ZipCode,PhoneNumber
 1,John,Doe,johndoe@example.com,123 Main St,New York,10001,555-123-4567
 2,Jane,Smith,janesmith@example.com,456 Elm St,Los Angeles,90001,555-987-6543
 3,Michael,Johnson,michaeljohnson@example.com,789 Oak St,Chicago,60601,555-234-5678
