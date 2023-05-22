@@ -1,0 +1,41 @@
+id,course_name,student_id,date
+1,Mathematics,1,2023-05-01
+2,Mathematics,2,2023-05-01
+3,Mathematics,3,2023-05-01
+4,Mathematics,4,2023-05-01
+5,Mathematics,5,2023-05-01
+6,English,1,2023-05-02
+7,English,2,2023-05-02
+8,English,3,2023-05-02
+9,English,4,2023-05-02
+10,English,5,2023-05-02
+11,Physics,1,2023-05-03
+12,Physics,2,2023-05-03
+13,Physics,3,2023-05-03
+14,Physics,4,2023-05-03
+15,Physics,5,2023-05-03
+16,Chemistry,1,2023-05-04
+17,Chemistry,2,2023-05-04
+18,Chemistry,3,2023-05-04
+19,Chemistry,4,2023-05-04
+20,Chemistry,5,2023-05-04
+21,History,1,2023-05-05
+22,History,2,2023-05-05
+23,History,3,2023-05-05
+24,History,4,2023-05-05
+25,History,5,2023-05-05
+26,Geography,1,2023-05-06
+27,Geography,2,2023-05-06
+28,Geography,3,2023-05-06
+29,Geography,4,2023-05-06
+30,Geography,5,2023-05-06
+31,Computer Science,1,2023-05-07
+32,Computer Science,2,2023-05-07
+33,Computer Science,3,2023-05-07
+34,Computer Science,4,2023-05-07
+35,Computer Science,5,2023-05-07
+36,Art,1,2023-05-08
+37,Art,2,2023-05-08
+38,Art,3,2023-05-08
+39,Art,4,2023-05-08
+40,Art,5,2023-05-08

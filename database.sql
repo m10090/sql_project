@@ -1,30 +1,17 @@
-CREATE DATABASE OnlineStore;
-CREATE TABLE OnlineStore.Customer (
-    CustomerID INT NOT NULL PRIMARY KEY,
-    FirstName VARCHAR(255) NOT NULL,
-    LastName VARCHAR(255) NOT NULL,
-    Email VARCHAR(255) NOT NULL,
-    Address VARCHAR(255) NOT NULL,
-    City VARCHAR(255) NOT NULL,
-    ZipCode VARCHAR(255) NOT NULL,
-    PhoneNumber VARCHAR(255) NOT NULL
+-- Active: 1684524067416@@172.17.0.2@3306@School
+CREATE DATABASE School;
+USE School;
+create table Students(
+    id int not null auto_increment,
+    name varchar(255) not null,
+    age int not null,
+    primary key(id)
 );
-CREATE TABLE OnlineStore.Product(
-    ProductID INT  PRIMARY KEY,
-    ProductName VARCHAR(255) NOT NULL,
-    Category VARCHAR(255) NOT NULL,
-    Price DECIMAL(10, 2)   NOT NULL,
-    Quantity INT NOT NULL
-);
-
-
-CREATE TABLE OnlineStore.Orders (
-    OrderID INT NOT NULL PRIMARY KEY,
-    CustomerID INT,
-    ProductID INT,
-    OrderDate DATE NOT NULL,
-    Quantity INT NOT NULL,
-    Total DECIMAL(10, 2) NOT NULL,
-    FOREIGN KEY (CustomerID) REFERENCES OnlineStore.Customer(CustomerID),
-    FOREIGN KEY (ProductID) REFERENCES OnlineStore.Product(ProductID)
+create table Attendance(
+    id int not null auto_increment,
+    student_id int not null,
+    course_name VARCHAR(255) not null,
+    date date not null,
+    primary key(id),
+    foreign key(student_id) references School.Students(id)
 );
