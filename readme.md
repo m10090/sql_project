@@ -22,6 +22,13 @@ create a new user `CREATE USER 'username'@'IPAddress' IDENTIFIED BY 'password';`
 grant all privileges to the user `GRANT ALL PRIVILEGES ON *.* TO 'username'@'IPAddress';`
 flush privileges `FLUSH PRIVILEGES;`
 you can now use the user to connect to the database in python notebook or any other program also terminal
+__ if it is not working try to change the ip address with % __
+__
+if it also not working 
+stop the container `docker stop mysql`
+remove the container `docker rm mysql`
+`docker run -p 13306:3306 --name mysql -eMYSQL_ROOT_PASSWORD=password -d mysql:latest`
+__
 ###sql server method 
 install sql server on your machine https://dev.mysql.com/doc/mysql-getting-started/en/
 connect to the database with the user you created in the installation (you may need to get the ip address of your machine to connect to python notebook)
