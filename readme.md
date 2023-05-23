@@ -28,6 +28,7 @@ if it also not working
 stop the container `docker stop mysql`
 remove the container `docker rm mysql`
 `docker run -p 13306:3306 --name mysql -eMYSQL_ROOT_PASSWORD=password -d mysql:latest`
+the ip address of the container is localhost
 __
 ###sql server method 
 install sql server on your machine https://dev.mysql.com/doc/mysql-getting-started/en/
