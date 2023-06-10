@@ -2,7 +2,8 @@
 use School;
 alter table Attendance add column attend int;
 update Attendance set attend = 1;
-SELECT att.course_name, att.date, s.name, IFNULL( A.attend, 0) AS attend
+-- you can replace IF_NULL with count to attend column to get attendence count
+SELECT att.course_name, att.date, s.name, if_null(A.attend,0) as attend
 FROM Attendance att
 CROSS JOIN Students s
 LEFT JOIN (
